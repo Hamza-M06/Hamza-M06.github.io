@@ -1,7 +1,6 @@
 /* General setup */
 
 
-
 * {
   box-sizing: border-box;
 }
@@ -64,8 +63,6 @@ header, footer {
     font-display: swap;
 }
 
-
-
 html {
   font-family: Libre Baskerville, serif;
   font-size: 10px;
@@ -103,6 +100,7 @@ section h2 + p {
 }
 
 p, li {
+
   font-size: 1.6rem;
   line-height: 1.5;
   letter-spacing: 0.5px;
