@@ -53,9 +53,43 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    /*My Code*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
   }
 
   .feature {
       width: 200px;
   }
+
+  
+@media screen and (max-width: 600px) {
+    nav {
+        position: static;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        padding: .5em;
+        text-align: center;
+    }
+    .grid {
+        flex-direction: column-reverse;
+    }
+    .photos {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+    .feature {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+    article {
+        padding-top: 1em;
+    }
+
+    }
 
