@@ -26,17 +26,14 @@ body {
     border: 5px solid purple;
     padding: 1.5em;
     }
-
     a:link,
     a:visited {
         color: #fb6542;
     }
-
     a:hover {
-        color: green;
-        text-decoration: none;
-    }
-        
-
+    color: green;
+    text-decoration: none;
+  }
+    
 
       
