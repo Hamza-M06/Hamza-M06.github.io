@@ -1,3 +1,10 @@
+/**
+ * Name: Hamza Mohamed
+ * File: Assignment 4 Part 2
+ * Description:Image gallary part 2 Assignment 4 
+ * Date:July 2025
+ */
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
