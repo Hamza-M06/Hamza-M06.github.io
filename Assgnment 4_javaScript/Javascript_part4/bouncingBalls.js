@@ -1,3 +1,10 @@
+/**
+ * Name: Hamza Mohamed
+ * File: Assignment 4 Part 4
+ * Description:bouncing balls part 4 Assignment 4 
+ * Date:July 2025
+ */
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
