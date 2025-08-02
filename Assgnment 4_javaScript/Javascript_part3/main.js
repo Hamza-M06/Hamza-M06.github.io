@@ -90,6 +90,7 @@ class Ball {
 
 }
 
+
 const balls =[];
 while (balls.length < 25) {
   const size = random(10, 20);
@@ -114,6 +115,7 @@ function loop() {
   for (const ball of balls) {
     ball.draw();
     ball.update();
+    ball.collisionDetect();
   }
 
   requestAnimationFrame(loop);
