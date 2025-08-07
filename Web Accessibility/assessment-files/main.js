@@ -1,3 +1,11 @@
+/**
+ * Name: Hamza Mohamed
+ * File: Main.js
+ * Date: August 2025
+ * Description: Accessibility troubleshooting Challenge
+ */
+
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
