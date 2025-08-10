@@ -21,23 +21,30 @@
   </head>
 
   <body>
-    <div class="header">
-      <font size="7">Welcome to our wildlife website</font>
-    </div>
+      <h1>
+      Welcome to our wildlife website
+    </h1>
+    
+    <a id="skip-to-content-link" class="skip-to-content-link" href="#main-content">
+      Skip to main content
+    </a>
 
-    <div class="nav">
+    <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="ourTeam">Our team</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
       </ul>
-
+      
       <form class="search">
-        <input type="search" name="q" placeholder="Search query">
-        <input type="submit" value="Go!">
+        <label for="site-search">Search the site:</label>
+        <input type="search" id="site-search" name="q" placeholder="Search query"
+        aria-label="Search through site content">
+        <button>Search</button>
       </form>
-    </div>
+      
+    </nav>
 
     <main>
       <article>
@@ -179,3 +186,4 @@
 
   </body>
 </html>
+
