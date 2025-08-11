@@ -43,13 +43,69 @@ function submitComment() {
   const nameValue = nameField.value;
   const commentValue = commentField.value;
 
-  namePara.textContent = nameValue;
-  commentPara.textContent = commentValue;
+    // Make author and message tabbable
+  namePara.setAttribute("tabindex", "0");
+  commentPara.setAttribute("tabindex", "0");
+
+
+
+  nameLabel.textContent = "Author: ";
+  commentLabel.textContent = "Comment: ";
+
+  namePara.appendChild(nameLabel);
+  commentPara.appendChild(commentLabel);
+
+ 
+
+
+  namePara.innerHTML += nameValue;
+  commentPara.innerHTML += commentValue;
+
+  console.log("attr: ", namePara.getAttribute("tabindex"));
+
+
 
   list.appendChild(listItem);
   listItem.appendChild(namePara);
   listItem.appendChild(commentPara);
 
+  console.log("namePara: ", namePara);
+
   nameField.value = '';
   commentField.value = '';
 }
+
+
+
+console.log("here")
+const transcript = document.querySelector('.transcript');
+const transcriptBtn = document.querySelector('.transcript-container button');
+
+transcriptBtn.addEventListener("click", toggleTranscript);
+
+function toggleTranscript() {
+  if(transcriptBtn.textContent === 'Show transcript') {
+    transcript.style.height = '150px';
+    transcriptBtn.textContent = 'Hide transcript';
+  } else {
+    transcript.style.height = '0';
+    transcriptBtn.textContent = 'Show transcript';
+  }
+};
+
+
+const commentBtn = document.querySelector(".show-hide")
+
+commentBtn.addEventListener("keydown", (e) => {
+  if(e.keyCode === 13) { // The Enter/Return key
+    document.activeElement.click();
+  }
+});
+
+
+const skipToContentLink = document.querySelector("#skip-to-content-link");
+
+skipToContentLink.addEventListener("focus", (e) => {
+  
+  skipToContentLink.classList.toggle("skip-to-content-link-visible");
+})
